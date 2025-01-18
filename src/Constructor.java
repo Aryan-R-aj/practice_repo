@@ -5,13 +5,14 @@ class Tv{
         System.out.println("Non parameterized Constructor of Tv Class ");
     }
     public Tv(int x){
-        System.out.println("The Current Volume is" + x);
+        System.out.println("The Current Volume is " + x);
     }
 }
 
 public class Constructor {
     public static void main(String[] args){
         Tv t=new Tv();
+        Tv t1=new Tv(5);
 
     }
 }
