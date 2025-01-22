@@ -7,7 +7,7 @@ def vigenere_encrypt(plaintext, key):
     
     for i in range(len(plaintext_as_int)):
         if 0 <= plaintext_as_int[i] < 26:  # Only encrypt alphabetic characters
-            value = (plaintext_as_int[i] + key_as_int[i % key_length]) % 26
+            value = (plaintext_as_int[i] + key_as_int[i % key_length]) % 26 #total aplhabet is 26 english
             encrypted_text.append(chr(value + 65))
         else:
             encrypted_text.append(plaintext[i])  # Keep non-alphabetic characters as-is
