@@ -16,7 +16,7 @@ public class is_prime_Or_Not {
             return false;
         }
         for(int i = 2; i <= num/2; i++){
-            if(num % 2 == 0){
+            if(num % i == 0){
                 return false;
             }
         }
